@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Bites - Bite into the Taste of India</title>
+    <link rel="stylesheet" href="DesiBites.css">
+    <script src="DesiBites.js"></script>
+</head>
+<body>
+    <div id="splash">
+        <img src="images/logo.jpg">
+        <h1>Welcome to Desi Bites 🍽️</h1>
+    </div>
+
+    <div class="title">
+        Desi Bites<br>
+        <pre style="font-size: 0.8em;">                 - Bite into the Taste of India</pre>
+    </div>
+    <nav class="nav">
+            <a href="#About">About us </a>
+            <a href="#Menu">Our Menu </a>
+            <a href="#cartSection">Your Cart</a>
+            <a href="#Reservation">Reserve a Table  </a>
+            <a href="#Review">Review </a>
+            <a href="#Contact">Contact Us </a>
+
+    </nav>
+    <div id="About">
+        <h1>About</h1>
+        <div class="about-text">
+            <p><strong>Welcome to Desi Bites</strong> — your neighbourhood gateway to authentic Indian cuisine. Born out of a passion for regional flavours and homestyle cooking, Desi Bites brings together the rich culinary heritage of North, South, East, and West India — all under one roof.</p>
+            <p>We believe that great food tells a story. Whether it's the aroma of a Hyderabadi biryani, the comfort of Rajma Chawal, or the crunch of a perfect Dosa, every dish at Desi Bites is prepared with care, using traditional recipes and fresh, local ingredients.</p>
+            <p>Whether you're here for a quick breakfast, a hearty lunch, or to indulge in your favourite thali, we promise to serve you the warmth and taste of home — one bite at a time.</p>        </div>
+        <div class="chef-section">
+            <img src="images/chef_arjun.jpeg" alt="Chef Arjun Verma" class="chef-img">
+            <div class="chef-description">
+                <h2>Meet Our Chef</h2>
+                <p><strong>Chef Arjun Verma</strong> brings over 15 years of culinary mastery from kitchens across India. Known for his creative twists on traditional recipes, he blends authenticity with innovation. At Desi Bites, his vision is to unite India's regional flavours under one roof — with love, skill, and a pinch of spice.</p>
+            </div>
+        </div><br><br>
+         <div class="about-images">
+            <img src="images/restaurant.jpeg" alt="Desi Bites Interior">
+        </div>
+    </div><hr>
+    <div id="Menu">
+        <h1>Menu</h1>
+        <nav id="MenuNav">
+            <a href="#Breakfast">Breakfast</a>
+            <a href="#Lunch-Dinner">Lunch & Dinner</a>
+            <a href="#Desserts-Sweets">Desserts & Sweets</a>
+            <a href="#Drinks-Beverages">Drinks & Beverages</a>
+        </nav>
+        <br>
+
+        <div class="menu-search-container">
+            <input type="text" id="menuSearch" placeholder=" Search your dish here...🔍" />
+        </div>
+
+        <h2 id="Breakfast"> Breakfast </h2>
+        <div class="items">
+            <div class="item">
+                <img src="images/aloo_paratha.jpeg" alt="Aloo-Paratha">
+                <h4>Aloo-Paratha</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Aloo-Paratha', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chole_batura.jpeg" alt="Chole-Batura">
+                <h4>Chole-Batura</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹95</p>
+  <button onclick="addToCart('Chole-Batura', 95)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/paneer_paratha.jpeg" alt="Paneer Paratha">
+                <h4>Paneer Paratha</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹90</p>
+  <button onclick="addToCart('Paneer Paratha', 90)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/besan_chilla.jpeg" alt="Besan Chilla">
+                <h4>Besan Chilla</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹65</p>
+  <button onclick="addToCart('Besan Chilla', 65)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/idli.jpeg" alt="Idli">
+                <h4>Idli</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Idli', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/uthapam.jpeg" alt="Uthapam">
+                <h4>Uthapam</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹80</p>
+  <button onclick="addToCart('Uthapam', 80)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/masala_dosa.jpeg" alt="Masala Dosa">
+                <h4>Masala Dosa</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹85</p>
+  <button onclick="addToCart('Masala Dosa', 85)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/upma.jpeg" alt="Upma">
+                <h4>Upma</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Upma', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/vada.jpeg" alt="Vada">
+                <h4>Vada</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹55</p>
+  <button onclick="addToCart('Vada', 55)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/puri.jpeg" alt="Puri">
+                <h4>Puri</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Puri', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/poha.jpeg" alt="Poha">
+                <h4>Poha</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Poha', 50)">Add to Cart</button>
+</div>
+        </div>
+        <h2 id="Lunch-Dinner"> Lunch & Dinner </h2>
+        <h3>Appetizers</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/paneer_tikka.jpeg" alt="Paneer Tikka">
+                <h4>Paneer Tikka</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹130</p>
+  <button onclick="addToCart('Paneer Tikka', 130)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/aloo_tikki.jpeg" alt="Aloo Tikki">
+                <h4>Aloo Tikki</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹80</p>
+  <button onclick="addToCart('Aloo Tikki', 80)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/vegetable_samosa.jpeg" alt="Vegetable Samosa">
+                <h4>Vegetable Samosa</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Vegetable Samosa', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/corn_samosa.jpeg" alt="Corn Samosa">
+                <h4>Corn Samosa</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹55</p>
+  <button onclick="addToCart('Corn Samosa', 55)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/corn_cheese_balls.jpeg" alt="Corn Cheese Balls">
+                <h4>Corn Cheese Balls</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹95</p>
+  <button onclick="addToCart('Corn Cheese Balls', 95)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chilli_paneer_dry.jpeg" alt="Chilli Paneer (Dry)">
+                <h4>Chilli Paneer (Dry)</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹120</p>
+  <button onclick="addToCart('Chilli Paneer (Dry)', 120)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/onion_pakora.jpeg" alt="Onion Pakora">
+                <h4>Onion Pakora</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Onion Pakora', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/samosa_chaat.jpeg" alt="Samosa Chaat">
+                <h4>Samosa Chaat</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹85</p>
+  <button onclick="addToCart('Samosa Chaat', 85)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_tikka.jpeg" alt="Chicken Tikka">
+                <h4>Chicken Tikka</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹140</p>
+  <button onclick="addToCart('Chicken Tikka', 140)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_pakora.jpeg" alt="Chicken Pakora">
+                <h4>Chicken Pakora</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹115</p>
+  <button onclick="addToCart('Chicken Pakora', 115)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/tandoori_chicken.jpeg" alt="Tandoori Chicken">
+                <h4>Tandoori Chicken</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹160</p>
+  <button onclick="addToCart('Tandoori Chicken', 160)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_65.jpeg" alt="Chicken 65">
+                <h4>Chicken 65</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹135</p>
+  <button onclick="addToCart('Chicken 65', 135)">Add to Cart</button>
+</div>
+        </div>
+        <h3>Naans and Rotis</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/plain_naan.jpeg" alt="Plain Naan">
+                <h4>Plain Naan</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹45</p>
+  <button onclick="addToCart('Plain Naan', 45)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/butter_naan.jpeg" alt="Butter Naan">
+                <h4>Butter Naan</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Butter Naan', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/garlic_naan.jpeg" alt="Garlic Naan">
+                <h4>Garlic Naan</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Garlic Naan', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/paneer_naan.jpeg" alt="Paneer Naan">
+                <h4>Paneer Naan</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹85</p>
+  <button onclick="addToCart('Paneer Naan', 85)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/tandoori_roti.jpeg" alt="Tandoori Roti">
+                <h4>Tandoori Roti</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹35</p>
+  <button onclick="addToCart('Tandoori Roti', 35)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/butter_roti.jpeg" alt="Butter Roti">
+                <h4>Butter Roti</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹40</p>
+  <button onclick="addToCart('Butter Roti', 40)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/roomali_roti.jpeg" alt="Roomali Roti">
+                <h4>Roomali Roti</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹65</p>
+  <button onclick="addToCart('Roomali Roti', 65)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/laccha_paratha.jpeg" alt="Laccha Paratha">
+                <h4>Laccha Paratha</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Laccha Paratha', 70)">Add to Cart</button>
+</div>
+        </div>
+        <h3>Rice Corner</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/lemon_rice.jpeg" alt="Lemon Rice">
+                <h4>Lemon Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹75</p>
+  <button onclick="addToCart('Lemon Rice', 75)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/jeera_rice.jpeg" alt="Jeera Rice">
+                <h4>Jeera Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹80</p>
+  <button onclick="addToCart('Jeera Rice', 80)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/veg_pulao.jpeg" alt="Veg Pulao">
+                <h4>Veg Pulao</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹110</p>
+  <button onclick="addToCart('Veg Pulao', 110)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mutter_pulao.jpeg" alt="Mutter Pulao">
+                <h4>Mutter Pulao</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹105</p>
+  <button onclick="addToCart('Mutter Pulao', 105)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_pulao.jpeg" alt="Chicken Pulao">
+                <h4>Chicken Pulao</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹145</p>
+  <button onclick="addToCart('Chicken Pulao', 145)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_biryani.jpeg" alt="Chicken Biryani">
+                <h4>Chicken Biryani</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹160</p>
+  <button onclick="addToCart('Chicken Biryani', 160)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_dum_biryani.jpeg" alt="Chicken Dum Biryani">
+                <h4>Chicken Dum Biryani</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹170</p>
+  <button onclick="addToCart('Chicken Dum Biryani', 170)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mutton_biryani.jpeg" alt="Mutton Biryani">
+                <h4>Mutton Biryani</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹190</p>
+  <button onclick="addToCart('Mutton Biryani', 190)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/egg_biryani.jpeg" alt="Egg Biryani">
+                <h4>Egg Biryani</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹120</p>
+  <button onclick="addToCart('Egg Biryani', 120)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/vegetable_biryani.jpeg" alt="Vegetable Biryani">
+                <h4>Vegetable Biryani</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹115</p>
+  <button onclick="addToCart('Vegetable Biryani', 115)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/paneer_biryani.jpeg" alt="Paneer Biryani">
+                <h4>Paneer Biryani</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹130</p>
+  <button onclick="addToCart('Paneer Biryani', 130)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/keema_biryani.jpeg" alt="Keema Biryani">
+                <h4>Keema Biryani</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹155</p>
+  <button onclick="addToCart('Keema Biryani', 155)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/egg_fried_rice.jpeg" alt="Egg Fried Rice">
+                <h4>Egg Fried Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹100</p>
+  <button onclick="addToCart('Egg Fried Rice', 100)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_fried_rice.jpeg" alt="Chicken Fried Rice">
+                <h4>Chicken Fried Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹125</p>
+  <button onclick="addToCart('Chicken Fried Rice', 125)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/schezwan_fried_rice.jpeg" alt="Schezwan Fried Rice">
+                <h4>Schezwan Fried Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹115</p>
+  <button onclick="addToCart('Schezwan Fried Rice', 115)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mixed_fried_rice.jpeg" alt="Mixed Fried Rice">
+                <h4>Mixed Fried Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹135</p>
+  <button onclick="addToCart('Mixed Fried Rice', 135)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/veg_fried_rice.jpeg" alt="Veg Fried Rice">
+                <h4>Veg Fried Rice</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹95</p>
+  <button onclick="addToCart('Veg Fried Rice', 95)">Add to Cart</button>
+</div>
+        </div>
+        <h3>Curries</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/paneer_butter_masala.jpeg" alt="Paneer Butter Masala">
+                <h4>Paneer Butter Masala</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹150</p>
+  <button onclick="addToCart('Paneer Butter Masala', 150)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/palak_paneer.jpeg" alt="Palak Paneer">
+                <h4>Palak Paneer</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹140</p>
+  <button onclick="addToCart('Palak Paneer', 140)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/kadai_paneer.jpeg" alt="Kadai Paneer">
+                <h4>Kadai Paneer</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹145</p>
+  <button onclick="addToCart('Kadai Paneer', 145)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mix_veg_curry.jpeg" alt="Mix Veg Curry">
+                <h4>Mix Veg Curry</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹120</p>
+  <button onclick="addToCart('Mix Veg Curry', 120)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/rajma_masala.jpeg" alt="Rajma Masala">
+                <h4>Rajma Masala</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹115</p>
+  <button onclick="addToCart('Rajma Masala', 115)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chana_masala.jpeg" alt="Chana Masala">
+                <h4>Chana Masala</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹110</p>
+  <button onclick="addToCart('Chana Masala', 110)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/malai_kofta.jpeg" alt="Malai Kofta">
+                <h4>Malai Kofta</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹135</p>
+  <button onclick="addToCart('Malai Kofta', 135)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/veg_kolhapuri.jpeg" alt="Veg Kolhapuri">
+                <h4>Veg Kolhapuri</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹125</p>
+  <button onclick="addToCart('Veg Kolhapuri', 125)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/butter_chicken.jpeg" alt="Butter Chicken">
+                <h4>Butter Chicken</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹180</p>
+  <button onclick="addToCart('Butter Chicken', 180)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chicken_tikka_masala.jpeg" alt="Chicken Tikka Masala">
+                <h4>Chicken Tikka Masala</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹175</p>
+  <button onclick="addToCart('Chicken Tikka Masala', 175)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/kadai_chicken.jpeg" alt="Kadai Chicken">
+                <h4>Kadai Chicken</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹165</p>
+  <button onclick="addToCart('Kadai Chicken', 165)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/andhra_chicken.jpeg" alt="Andhra Chicken Curry">
+                <h4>Andhra Chicken Curry</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹170</p>
+  <button onclick="addToCart('Andhra Chicken Curry', 170)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/classic_egg_curry.jpeg" alt="Classic Egg Curry">
+                <h4>Classic Egg Curry</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹110</p>
+  <button onclick="addToCart('Classic Egg Curry', 110)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/south_egg_curry.jpeg" alt="South Indian Egg Curry">
+                <h4>South Indian Egg Curry</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹115</p>
+  <button onclick="addToCart('South Indian Egg Curry', 115)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/punjabi_egg_masala.jpeg" alt="Punjabi Egg Masala">
+                <h4>Punjabi Egg Masala</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹120</p>
+  <button onclick="addToCart('Punjabi Egg Masala', 120)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/egg_korma.jpeg" alt="Egg Korma">
+                <h4>Egg Korma</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹125</p>
+  <button onclick="addToCart('Egg Korma', 125)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mutton_curry.jpeg" alt="Mutton Curry">
+                <h4>Mutton Curry</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹190</p>
+  <button onclick="addToCart('Mutton Curry', 190)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mutton_korma.jpeg" alt="Mutton Korma">
+                <h4>Mutton Korma</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹195</p>
+  <button onclick="addToCart('Mutton Korma', 195)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mutton_do_pyaza.jpeg" alt="Mutton Do Pyaza">
+                <h4>Mutton Do Pyaza</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹200</p>
+  <button onclick="addToCart('Mutton Do Pyaza', 200)">Add to Cart</button>
+</div>
+        </div>
+        <h3 id="Desserts-Sweets">Desserts & Sweets</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/gulab_jamun.jpeg" alt="Gulab Jamun">
+                <h4>Gulab Jamun</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Gulab Jamun', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/rasmalai.jpeg" alt="Rasmalai">
+                <h4>Rasmalai</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>₹90</p>
+  <button onclick="addToCart('Rasmalai', 90)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/malai_kulfi.jpeg" alt="Malai Kulfi">
+                <h4>Malai Kulfi (Stick)</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Malai Kulfi (Stick)', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/gajar_halwa.jpeg" alt="Gajar Halwa">
+                <h4>Gajar Halwa</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>₹80</p>
+  <button onclick="addToCart('Gajar Halwa', 80)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/kaju_katli.jpeg" alt="Kaju Katli">
+                <h4>Kaju Katli</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹100</p>
+  <button onclick="addToCart('Kaju Katli', 100)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/barfi.jpeg" alt="Barfi">
+                <h4>Barfi</h4>
+                <p>⭐⭐⭐</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Barfi', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/rasgulla.jpeg" alt="Rasgulla">
+                <h4>Rasgulla</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>₹75</p>
+  <button onclick="addToCart('Rasgulla', 75)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/sooji_halwa.jpeg" alt="Sooji Halwa">
+                <h4>Sooji Halwa</h4>
+                <p>⭐⭐⭐</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Sooji Halwa', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mango_kulfi.jpeg" alt="Mango Kulfi">
+                <h4>Mango Kulfi</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹65</p>
+  <button onclick="addToCart('Mango Kulfi', 65)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/pista_kulfi.jpeg" alt="Pista Kulfi">
+                <h4>Pista Kulfi</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>₹65</p>
+  <button onclick="addToCart('Pista Kulfi', 65)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/fruit_icecream.jpeg" alt="Fruit Ice Cream">
+                <h4>Fruit Ice Cream</h4>
+                <p>⭐⭐⭐</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Fruit Ice Cream', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/vanilla.jpeg" alt="Vanilla Ice Cream">
+                <h4>Vanilla Icecream</h4>
+                <p>⭐⭐⭐</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Vanilla Icecream', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/chocolate.jpeg" alt="Chocolate Ice Cream">
+                <h4>Chocolate Icecream</h4>
+                <p>⭐⭐⭐⭐</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Chocolate Icecream', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/strawberry.jpeg" alt="Strawberry Ice Cream">
+                <h4>Strawberry Icecream</h4>
+                <p>⭐⭐⭐</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Strawberry Icecream', 60)">Add to Cart</button>
+</div>
+            
+<div class="item">
+                <img src="images/gulab_icecream.jpeg" alt="Gulab Jamun with Ice Cream">
+                <h4>Gulab Jamun with Ice Cream</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹90</p>
+  <button onclick="addToCart('Gulab Jamun with Ice Cream', 90)">Add to Cart</button>
+</div>
+        </div>
+        <h3 id="Drinks-Beverages">Drinks & Beverages</h3>
+        <div class="items">
+            <div class="item">
+                <img src="images/masala_chai.jpeg" alt="Masala Chai">
+                <h4>Masala Chai</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹40</p>
+  <button onclick="addToCart('Masala Chai', 40)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/filter_coffee.jpeg" alt="Filter Coffee">
+                <h4>Filter Coffee</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Filter Coffee', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/mango_lassi.jpeg" alt="Mango Lassi">
+                <h4>Mango Lassi</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹80</p>
+  <button onclick="addToCart('Mango Lassi', 80)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/badam_milk.jpeg" alt="Badam Milk">
+                <h4>Badam Milk</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹70</p>
+  <button onclick="addToCart('Badam Milk', 70)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/rose_milk.jpeg" alt="Rose Milk">
+                <h4>Rose Milk</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Rose Milk', 60)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/falooda.jpeg" alt="Falooda">
+                <h4>Falooda</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹120</p>
+  <button onclick="addToCart('Falooda', 120)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/jaljeera.jpeg" alt="Jaljeera">
+                <h4>Jaljeera</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹40</p>
+  <button onclick="addToCart('Jaljeera', 40)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/lemon_soda.jpeg" alt="Lemon Soda">
+                <h4>Lemon Soda (Sweet/Salted)</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹30</p>
+  <button onclick="addToCart('Lemon Soda (Sweet/Salted)', 30)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/iced_chai.jpeg" alt="Iced Masala Chai">
+                <h4>Iced Masala Chai</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹50</p>
+  <button onclick="addToCart('Iced Masala Chai', 50)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/hot_chocolate.jpeg" alt="Hot Chocolate">
+                <h4>Hot Chocolate</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>₹110</p>
+  <button onclick="addToCart('Hot Chocolate', 110)">Add to Cart</button>
+</div>
+            <div class="item">
+                <img src="images/turmeric_milk.jpeg" alt="Turmeric Milk">
+                <h4>Turmeric Milk (Haldi Doodh)</h4>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>₹60</p>
+  <button onclick="addToCart('Turmeric Milk (Haldi Doodh)', 60)">Add to Cart</button>
+</div>
+            <div id="noResults" class="no-results">
+                😔 No dishes match your search.
+            </div>
+        </div>
+    </div><hr>
+    <div id="cartSection" class="cart-container">
+    <h2 onclick="toggleCart()">🛒 Your Cart (Click to Expand/Collapse)</h2>
+    <div id="cartContent" class="cart-content">
+        <ul id="cartItems"></ul>
+        <h3 id="cartTotal">Total: ₹0</h3>
+    </div>
+    </div><hr>
+    <div>
+      <h1>Reserve your table now</h1>
+      <form id="Reservation">
+      <label for="firstName">Name: </label><br>
+      <input type="text" id="firstName" placeholder="First Name"><br>
+      <input type="text" placeholder="Last Name"><br><br>
+
+      <label for="reservationEmail">Email:</label><br>
+      <input type="email" id="reservationEmail" placeholder="example@example.com"><br><br>
+
+      <label for="phoneNumber">Phone Number:</label><br>
+      <input type="tel" id="phoneNumber" maxlength="10" placeholder="(000) 000-0000"><br><br>
+
+      <label for="guestCount">Number of guests:</label><br>
+      <input type="number" id="guestCount" min=1><br><br>
+
+      <label for="reservationDateTime">Reservation Date & Time:</label><br>
+      <input type="datetime-local" id="reservationDateTime"><br><br>
+
+      <label>Special Notes: </label><br>
+      <textarea placeholder="Any special requests or notes..."></textarea><br><br>
+
+      <button type="submit">Reserve</button>
+
+      <div id="reservationMsg" class="thank-you"></div>
+    </form>
+    </div><hr>
+    <div>
+        <h1>Leave your Reviews here</h1>
+        <form id="Review" action="#" method="post">
+        <label for="reviewName">Name:</label><br>
+        <input type="text" id="reviewName" name="name"><br><br>
+
+        <label for="reviewEmail">Email (optional):</label><br>
+        <input type="email" id="reviewEmail" name="email"><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating">
+            <option value="">-- Select --</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+        </select><br><br>
+
+        <label for="reviewMessage">Your Review:</label><br>
+        <textarea id="reviewMessage" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit Review</button>
+        
+        <div id="reviewMsg" class="thank-you"></div>
+        </form>
+
+    </div><hr>
+    <div>
+        <h1>Contact Us</h1>
+        <form id="Contact">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"  /><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"  /><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" ></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-box">
+      <h3>Desi Bites</h3>
+      <p>Bite into the essence of India — one plate at a time.</p>
+    </div>
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#About">About us</a></li>
+        <li><a href="#Menu">Our Menu</a></li>
+        <li><a href="#cartSection">Your Cart</a></li>
+        <li><a href="#Reservation">Reservations</a></li>
+        <li><a href="#Review">Reviews</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📍 Hyderabad, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ hello@desibites.in</p>
+    </div>
+    <div class="footer-box">
+      <h4>Follow Us</h4>
+      <p><a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://x.com/" target="_blank">Twitter</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Desi Bites | All Rights Reserved
+  </div>
+</footer>
+</body>
+</html>
